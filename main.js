@@ -249,13 +249,14 @@ Example:
 
 If you pass it "hello" then it should return "olleh"
 */
-function reverseString(string){
+
+
+function reverseString(string) {
   let answer = '';
-  
+  for (let i = string.length - 1; i >= 0; i--)
+    answer += string[i];
+  return answer;
 }
-
-
-
 
 
 
@@ -336,7 +337,17 @@ Example:
 If you pass "45" it should return 9
 If you pass "246" it should return 10
 */
+function sumLetters(sumA, sumB){
+  let sumA = 45;
+  let sumB = 246;
+  var aAnswer = "";
+  var bAnswer = "";
+  for(let i =0; i<a[i]; i++){
+    aAnswer += sumA[i];
 
+  }
+
+}
 
 
 
