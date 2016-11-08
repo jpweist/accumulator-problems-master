@@ -127,9 +127,9 @@ function multiplyNumbers(array, n){
 
 
 function doubleLetters(string){
- var temp = "";
-  for(i=0; i<string.lenght; i++){
-    temp.concat(string[i] + string[i])
+ let temp = "";
+  for(let i=0; i<string.lenght; i++){
+    temp.push(string.charAt(i).charAt(i))
   }
   return temp;
 }
@@ -154,11 +154,11 @@ Example: if you pass it ["a", "b", "c"] and ["d", "e", "f"] then it should retur
 NOTE: you can assume each input will be the same length
 */
 function interleave(){
-  let result = [] // declare lenght of array at first -- takes most time to allocate space for array
+  let result = []; // can declare lenght of array at first -- takes most time to allocate space for array
+  let a1 = ["a", "b", "c"];
+  let a2 = ["d", "e", "f"];
   for (let i =0; i < a1.length*2; i++){
-    result[i].push(a1[i]);
-    result[i].push(a1[i]);
-
+result.join(a1[i]) + result.join(a1[i]);
   }
   return result;
 }
@@ -200,13 +200,16 @@ function createRange(number, string){
 CHALLENGE
 ----------------------------------------
 
-Write function named flipArray that will take an array and return an object where the keys are the items and the values are the indices
+Write function named flipArray that will take an array and return an object where the
+keys are the items and the values are the indices
 
 Example:
 
 If you pass it ["quick", "brown", "fox"] then it should return { "quick": 0, "brown": 1, "fox": 2 }
 */
+function flipArray(array){
 
+}
 
 
 
@@ -246,7 +249,10 @@ Example:
 
 If you pass it "hello" then it should return "olleh"
 */
-
+function reverseString(string){
+  let answer = '';
+  
+}
 
 
 
