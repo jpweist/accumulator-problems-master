@@ -26,9 +26,10 @@ function test() {
 // */
 function sum(array){
   var temp = 0;
+  var total = 0;
   for(i=0; i<array.length; i++){
-    temp += array[i];
-
+    temp += (array[i]);
+    total += temp;
   }
  return temp;
 }
@@ -128,10 +129,12 @@ function multiplyNumbers(array, n){
 
 function doubleLetters(string){
  let temp = "";
+ let answer = "";
   for(let i=0; i<string.lenght; i++){
-    temp.push(string.charAt(i).charAt(i))
+    temp += concat(string[i])
+    answer += temp;
   }
-  return temp;
+  return answer;
 }
 
 
@@ -222,18 +225,22 @@ function flipArray(array){
 CHALLENGE
 ----------------------------------------
 
-Write function named arraysToObject that will take an array of 2-element arrays, and return an object of key/value pairs
+Write function named arraysToObject that will take an array of 2-element arrays, and
+return an object of key/value pairs
 
 Example:
 
 If you pass it [[2014, "Horse"], [2015, "Sheep"]] then it should return { 2014: "Horse", 2015: "Sheep" }
 
 */
+function arraysToObject(array){
 
-
-
-
-
+for(let i=0; i< array.length; i++) {
+    var original_value = my_arr(Num[i][i]);
+    var doubled_value = doubling(original_value);
+    obj[original_value] = doubled_value;
+}
+}
 
 
 
@@ -741,8 +748,13 @@ Example:
 
 If you pass {id: 1, name: "Joe"} it should return {1: "id", Joe: "name"}
 */
+let obj = {od: 1, name: "Joe"};
+let obj2 ={};
 
-
+for (let key in obj){
+  obj2[obj[key]] = key;
+}
+console.log(obj2)
 
 
 
